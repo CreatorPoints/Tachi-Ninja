@@ -32,9 +32,10 @@ The following stuffs were used... Very hacky :)
 |Item|Link|Price|Shipping Cost|
 |----|----|-----|-------------|
 |Switch|[HMX Taro Silent Linear](https://stackskb.com/store/hmx-taro-silent-linear-switch-pack-of-10/)|₹2,625.00 / $27.39|Free|
+|Stabilizers|[something](https://stackskb.com/store/durock-clear-screw-in-stabilizers-v2/?attribute_combination=4%2B1+Set&attribute_spacebar-size=6.25U)|₹1,595.00 / $16.65|Free|
 |PCB|[JLCPCB PCBA](HTTPS://jlcpcb.com)|$190.29|$72.45|
 
-Total - $290.13
+Total - $306.78
 
 ---
 ## Images!
