@@ -31,5 +31,14 @@ The following stuffs were used... Very hacky :)
 ## BOM:
 |Item|Link|Price|Shipping Cost|
 |----|----|-----|-------------|
-|Switch|[HMX Taro Silent Linear](https://stackskb.com/store/hmx-taro-silent-linear-switch-pack-of-10/)|₹2,625.00|Free|
+|Switch|[HMX Taro Silent Linear](https://stackskb.com/store/hmx-taro-silent-linear-switch-pack-of-10/)|₹2,625.00 / $27.39|Free|
+|PCB|[JLCPCB PCBA](HTTPS://jlcpcb.com)|$190.29|$72.45|
+
+Total - $290.13
+
+---
+## Images!
+![A highly detailed PCB](pictures/pcb.png)
+![What a good case!](pictures/keyboard.png)
+
 
