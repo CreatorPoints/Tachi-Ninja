@@ -45,6 +45,8 @@ The following stuffs were used... Very hacky :)
 |PCB|[JLCPCB PCBA](HTTPS://jlcpcb.com)|$190.29|$72.45|
 
 Total - $310.80
+### I would recommend to see this for more detail:
+[BOM](BOM.md)
 
 ---
 ## Images!
