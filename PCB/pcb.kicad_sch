@@ -4441,6 +4441,12 @@
 		(uuid "827e6a3f-c8a6-483f-8bca-ec77a8e68235")
 	)
 	(junction
+		(at 518.16 259.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8333e2ec-a65f-4e5e-90b3-71e0d0c1bcc0")
+	)
+	(junction
 		(at 200.66 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4475,12 +4481,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "889b5c3d-2222-469f-bb98-8cacb848d471")
-	)
-	(junction
-		(at 487.68 259.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "89ce3386-9b72-4c97-9e6e-bece42e14a32")
 	)
 	(junction
 		(at 340.36 157.48)
@@ -5328,7 +5328,7 @@
 	)
 	(wire
 		(pts
-			(xy 487.68 245.11) (xy 487.68 259.08)
+			(xy 487.68 245.11) (xy 487.68 290.83)
 		)
 		(stroke
 			(width 0)
@@ -5578,7 +5578,7 @@
 	)
 	(wire
 		(pts
-			(xy 518.16 246.38) (xy 518.16 292.1)
+			(xy 518.16 246.38) (xy 518.16 259.08)
 		)
 		(stroke
 			(width 0)
@@ -6255,6 +6255,16 @@
 			(type default)
 		)
 		(uuid "5e3152b4-d4a3-435f-bc8a-59acf6b9bb49")
+	)
+	(wire
+		(pts
+			(xy 518.16 259.08) (xy 518.16 292.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e79e9d6-1dd9-41b1-a6ec-9f0b6f9eee7b")
 	)
 	(wire
 		(pts
@@ -8188,16 +8198,6 @@
 	)
 	(wire
 		(pts
-			(xy 487.68 259.08) (xy 487.68 290.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6196cdc-4de6-459d-899f-d51653255cab")
-	)
-	(wire
-		(pts
 			(xy 226.06 243.84) (xy 226.06 257.81)
 		)
 		(stroke
@@ -9477,7 +9477,7 @@
 		(uuid "ea976e44-0efe-477a-b6d0-00c13b81cf8e")
 	)
 	(label "ROW2"
-		(at 505.46 259.08 0)
+		(at 535.94 259.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9588,7 +9588,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 274.32 231.14 0)
+		(at 350.52 273.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9597,9 +9597,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "00a07665-da3c-4c58-9746-328e657c4d86")
-		(property "Reference" "SW19"
-			(at 274.32 223.52 0)
+		(uuid "00b9d793-1f76-494e-a1d6-51fca9221535")
+		(property "Reference" "SW49"
+			(at 350.52 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9608,8 +9608,8 @@
 				)
 			)
 		)
-		(property "Value" "5"
-			(at 274.32 226.06 0)
+		(property "Value" "M"
+			(at 350.52 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9618,8 +9618,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 274.32 226.06 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 350.52 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9630,7 +9630,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 226.06 0)
+			(at 350.52 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9641,7 +9641,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 274.32 231.14 0)
+			(at 350.52 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9652,15 +9652,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b153639c-01a0-42ad-a991-e52d64f7f19e")
+			(uuid "24333232-d501-429f-8fe8-bb00268975ee")
 		)
 		(pin "2"
-			(uuid "b82aafa0-93fe-4169-ac0e-ba7c9fab427a")
+			(uuid "35e53ecf-e91e-43c3-8553-e9fc5006a317")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW19")
+					(reference "SW49")
 					(unit 1)
 				)
 			)
@@ -10115,166 +10115,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 200.66 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03810551-c0d0-4d8d-a769-56fa0c01766e")
-		(property "Reference" "SW53"
-			(at 200.66 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 200.66 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 200.66 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 200.66 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cb3a6906-7cda-4c85-b155-0825f61aa6c5")
-		)
-		(pin "2"
-			(uuid "e76fa735-ce37-400b-b08d-caa1cea631f4")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 530.86 292.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "03d46c20-aec6-4239-8f6a-811e75876562")
-		(property "Reference" "SW8"
-			(at 530.86 284.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Right_Ctrl"
-			(at 530.86 287.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 530.86 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 530.86 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 530.86 292.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "607ef722-3194-4b69-8746-31eeceda5e6c")
-		)
-		(pin "2"
-			(uuid "ec58d972-919b-4169-b439-dbb68a9d5ccd")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 458.47 273.05 180)
 		(unit 1)
@@ -10378,7 +10218,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 438.15 257.81 0)
+		(at 125.73 289.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10387,9 +10227,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "052caf51-5a12-4880-a29b-39d2e868869c")
-		(property "Reference" "SW49"
-			(at 438.15 250.19 0)
+		(uuid "055d1d06-342d-4259-ad1a-49705b46e58a")
+		(property "Reference" "SW55"
+			(at 125.73 281.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10398,8 +10238,8 @@
 				)
 			)
 		)
-		(property "Value" ";"
-			(at 438.15 252.73 0)
+		(property "Value" "LEFTWIN"
+			(at 125.73 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10408,8 +10248,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 438.15 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 125.73 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10420,7 +10260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 438.15 252.73 0)
+			(at 125.73 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10431,7 +10271,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 438.15 257.81 0)
+			(at 125.73 289.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10442,95 +10282,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2e35226d-3fbe-4c90-a4c1-823c5dc915b5")
+			(uuid "42b5cabe-acd7-4b24-be99-d8d7fc81320d")
 		)
 		(pin "2"
-			(uuid "1b14e8ae-f6f3-40d7-99c0-057df323593e")
+			(uuid "f5719a6c-dc33-4173-a7da-0032fd959a09")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 467.36 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0659241d-fc24-47dd-b902-6ef9912558ad")
-		(property "Reference" "SW50"
-			(at 467.36 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "'"
-			(at 467.36 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 467.36 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 467.36 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e2414440-a3e1-4175-8144-bddfea0c7991")
-		)
-		(pin "2"
-			(uuid "82379b8a-5fd8-4bf3-959b-3149e92894f4")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW50")
+					(reference "SW55")
 					(unit 1)
 				)
 			)
@@ -10697,166 +10457,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 200.66 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c0bcbcb-90b2-43e9-8666-33298244f62c")
-		(property "Reference" "SW42"
-			(at 200.66 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 200.66 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 200.66 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 200.66 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "80fcf908-0aeb-4f25-994a-5362267588f0")
-		)
-		(pin "2"
-			(uuid "f1039345-539e-4db3-93d2-163cc5cadf6b")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 200.66 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c6d23a6-d6f1-4a87-9e02-a219430969ef")
-		(property "Reference" "SW29"
-			(at 200.66 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "E"
-			(at 200.66 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 200.66 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 200.66 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "511dc98a-a556-4ea5-a162-b72edee285ed")
-		)
-		(pin "2"
-			(uuid "489e7f92-ae01-4b93-aa11-c5d5dfc8b122")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 265.43 257.81 180)
 		(unit 1)
@@ -10959,86 +10559,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 438.15 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e89a5c4-c4f4-47c3-852b-d89ccf6f4ce3")
-		(property "Reference" "SW36"
-			(at 438.15 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "P"
-			(at 438.15 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 438.15 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 438.15 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93df6447-4013-40f0-8b0a-9febf51295ba")
-		)
-		(pin "2"
-			(uuid "caf5d651-5cb8-4b48-b164-e5c8d839f68e")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 458.47 289.56 180)
 		(unit 1)
@@ -11135,86 +10655,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D151")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 350.52 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "10396f85-cd6b-43c0-948f-0032c045b39b")
-		(property "Reference" "SW21"
-			(at 350.52 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "7"
-			(at 350.52 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 350.52 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 350.52 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d69471c-2041-4033-9e40-af0c76b7349c")
-		)
-		(pin "2"
-			(uuid "8670d6e7-6751-489f-9bd8-160fdf602b0d")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW21")
 					(unit 1)
 				)
 			)
@@ -11395,86 +10835,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 289.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11859cf3-bc78-4c28-89ee-c5a47f1c425d")
-		(property "Reference" "SW10"
-			(at 88.9 281.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Left_Ctrl"
-			(at 88.9 284.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 88.9 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7e8aecaa-f605-48c3-892d-d2bd81d5a0eb")
-		)
-		(pin "2"
-			(uuid "b950bef4-cf33-4f74-9f95-bf568f836758")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -11837,6 +11197,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 530.86 259.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ab917c1-5ae9-4459-9907-52a6b864584e")
+		(property "Reference" "SW41"
+			(at 530.86 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ENTER"
+			(at 530.86 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_2.25u"
+			(at 530.86 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 530.86 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 530.86 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "22dfbe35-9e44-4983-a4db-97316ac18493")
+		)
+		(pin "2"
+			(uuid "081687df-4b0f-4689-a938-daf5e49755a9")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 341.63 257.81 180)
 		(unit 1)
@@ -12021,6 +11461,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1be0a715-4b28-45df-8017-214be9cf6f27")
+		(property "Reference" "SW15"
+			(at 88.9 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TAB"
+			(at 88.9 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.50u"
+			(at 88.9 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae042408-7db9-4f45-babe-9f29d0f07720")
+		)
+		(pin "2"
+			(uuid "c855a782-8096-4157-8dc3-d8662d9b3d38")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW15")
 					(unit 1)
 				)
 			)
@@ -12825,6 +12345,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 200.66 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24292adb-e210-418f-961b-5577072d0faa")
+		(property "Reference" "SW45"
+			(at 200.66 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C"
+			(at 200.66 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 200.66 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 200.66 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a210fe7-ab3a-4c16-8347-cacfb7007a7b")
+		)
+		(pin "2"
+			(uuid "38748420-91a3-4dfc-93e1-a0e27753193c")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 340.36 189.23 0)
 		(unit 1)
@@ -12907,6 +12507,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 311.15 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "279e2074-1886-4540-a82f-3761ae2b424a")
+		(property "Reference" "SW35"
+			(at 311.15 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "H"
+			(at 311.15 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 311.15 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 311.15 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 311.15 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7838b85b-a673-4c59-808e-fe039fda2efa")
+		)
+		(pin "2"
+			(uuid "9d21f220-7018-4680-aab0-6327856374a2")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW35")
 					(unit 1)
 				)
 			)
@@ -13002,7 +12682,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 274.32 243.84 0)
+		(at 238.76 257.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13011,9 +12691,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "287c01c0-ae4b-4682-959b-846561c5b798")
-		(property "Reference" "SW31"
-			(at 274.32 236.22 0)
+		(uuid "29c110b0-02d7-427b-8b92-5923972792f0")
+		(property "Reference" "SW33"
+			(at 238.76 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13022,8 +12702,8 @@
 				)
 			)
 		)
-		(property "Value" "T"
-			(at 274.32 238.76 0)
+		(property "Value" "F"
+			(at 238.76 252.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13032,8 +12712,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 274.32 238.76 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 238.76 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13044,7 +12724,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 238.76 0)
+			(at 238.76 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13055,7 +12735,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 274.32 243.84 0)
+			(at 238.76 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13066,15 +12746,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0a5abf5d-1fa4-4d80-8e56-020ce6450ab7")
+			(uuid "48819b10-1e52-4c22-a18b-a961ba81e65c")
 		)
 		(pin "2"
-			(uuid "86cd462a-2d2d-4837-a534-d7848302fe25")
+			(uuid "54fdc50f-ac55-4d8d-aae5-f6541ab7ef35")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW31")
+					(reference "SW33")
 					(unit 1)
 				)
 			)
@@ -13466,7 +13146,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 491.49 259.08 180)
+		(at 521.97 259.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13477,7 +13157,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c20e602-cefd-4d33-a32a-1691304cc1e1")
 		(property "Reference" "D156"
-			(at 491.49 252.73 0)
+			(at 521.97 252.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13487,7 +13167,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 491.49 255.27 0)
+			(at 521.97 255.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13497,7 +13177,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 491.49 259.08 0)
+			(at 521.97 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13508,7 +13188,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 491.49 259.08 0)
+			(at 521.97 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13519,7 +13199,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 491.49 259.08 0)
+			(at 521.97 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13530,7 +13210,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 491.49 259.08 0)
+			(at 521.97 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13541,7 +13221,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 491.49 259.08 0)
+			(at 521.97 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13669,6 +13349,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 438.15 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d83f664-0b3d-479c-b7e3-aca6f9295a65")
+		(property "Reference" "SW52"
+			(at 438.15 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "/"
+			(at 438.15 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 438.15 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 438.15 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f1f9ea0-6794-4760-ba10-50d548fb53e4")
+		)
+		(pin "2"
+			(uuid "7ac648b2-7117-4691-b461-e9adef62461b")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 200.66 35.56 0)
 		(unit 1)
@@ -13751,86 +13511,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 467.36 289.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e1d4430-b66c-4a77-ae48-c70e5a44e2af")
-		(property "Reference" "SW61"
-			(at 467.36 281.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MENU"
-			(at 467.36 284.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 467.36 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 467.36 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3633b027-97d4-4508-a856-7f98dea41eb7")
-		)
-		(pin "2"
-			(uuid "77cf1556-368a-4a4e-9525-fcf4cc596b44")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW61")
 					(unit 1)
 				)
 			)
@@ -14021,86 +13701,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D149")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f04afb3-e2df-4f96-a846-33265a0cd5c2")
-		(property "Reference" "SW1"
-			(at 88.9 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Tab"
-			(at 88.9 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB"
-			(at 88.9 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9f04cca6-f98a-47c0-9cc4-45a24ad4e44e")
-		)
-		(pin "2"
-			(uuid "ea9e1d68-814c-46b6-baa7-0ff5e05fc0fc")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -14795,246 +14395,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 311.15 289.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c70db3e-2d32-4b11-b3e1-b6375df7da4d")
-		(property "Reference" "SW7"
-			(at 311.15 281.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Spacebar"
-			(at 311.15 284.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_6.25u_PCB"
-			(at 311.15 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 311.15 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f71bd94-0bda-40fb-8369-24dc468bfa9b")
-		)
-		(pin "2"
-			(uuid "a7ac0da5-d319-42c2-b1d7-6e91f637ea6b")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 500.38 245.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3cddca01-5591-4d32-b9c9-4144cf4feae6")
-		(property "Reference" "SW38"
-			(at 500.38 237.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "]"
-			(at 500.38 240.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 500.38 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 500.38 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 500.38 245.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "29b2e81f-355c-4cb8-8ffc-bac1dd811d3e")
-		)
-		(pin "2"
-			(uuid "fee0462f-fab0-408f-9961-9dceef25c4a9")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 350.52 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3db3a9c9-2a9f-4ddd-842d-e178787ee806")
-		(property "Reference" "SW33"
-			(at 350.52 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "U"
-			(at 350.52 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 350.52 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 350.52 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ecb301a5-7a21-40ca-881a-2135fd608c91")
-		)
-		(pin "2"
-			(uuid "7cf98675-5947-4a77-b6bd-e7bd4f0020b3")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 369.57 196.85 0)
 		(unit 1)
@@ -15114,7 +14474,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 500.38 259.08 0)
+		(at 467.36 273.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15123,9 +14483,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3e6a9a96-4270-47c3-9519-8d0ade7e277b")
-		(property "Reference" "SW5"
-			(at 500.38 251.46 0)
+		(uuid "3f054cb0-b2eb-46eb-b403-c145a0a758a1")
+		(property "Reference" "SW53"
+			(at 467.36 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15134,8 +14494,8 @@
 				)
 			)
 		)
-		(property "Value" "Enter"
-			(at 500.38 254 0)
+		(property "Value" "RIGHTSHIFT"
+			(at 467.36 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15144,8 +14504,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB"
-			(at 500.38 254 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_2.75u"
+			(at 467.36 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15156,7 +14516,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 500.38 254 0)
+			(at 467.36 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15167,7 +14527,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 500.38 259.08 0)
+			(at 467.36 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15178,15 +14538,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ddf15a7-112a-4900-8916-d9e7d1d37e43")
+			(uuid "604fa70a-0629-4441-a10d-34d6a5887bc3")
 		)
 		(pin "2"
-			(uuid "2a1f426c-1897-413a-8402-bb02bee662b8")
+			(uuid "7c77d5ec-41f6-4eaf-97eb-82eb1ed27845")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW5")
+					(reference "SW53")
 					(unit 1)
 				)
 			)
@@ -15282,7 +14642,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 125.73 289.56 0)
+		(at 200.66 257.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15291,9 +14651,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "41006bb1-cad0-4b66-9e73-7be50b50241f")
-		(property "Reference" "SW11"
-			(at 125.73 281.94 0)
+		(uuid "4007dbfc-40ae-4334-a608-0479b7320915")
+		(property "Reference" "SW32"
+			(at 200.66 250.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15302,8 +14662,8 @@
 				)
 			)
 		)
-		(property "Value" "Left_Win"
-			(at 125.73 284.48 0)
+		(property "Value" "D"
+			(at 200.66 252.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15312,8 +14672,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 125.73 284.48 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 200.66 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15324,7 +14684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 284.48 0)
+			(at 200.66 252.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15335,7 +14695,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 125.73 289.56 0)
+			(at 200.66 257.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15346,15 +14706,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "62717d7b-a9e4-4013-b504-3966c00b0f3b")
+			(uuid "9073b438-995a-43f7-886b-2630e282d715")
 		)
 		(pin "2"
-			(uuid "8bc378bc-9751-4f4e-bfed-a58212fd9fbc")
+			(uuid "befa491a-622e-4e6d-846a-83ac7ec0b634")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW11")
+					(reference "SW32")
 					(unit 1)
 				)
 			)
@@ -15362,7 +14722,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 238.76 231.14 0)
+		(at 530.86 292.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15371,9 +14731,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "42da06d5-1050-4170-8ffc-a076f38701f7")
-		(property "Reference" "SW18"
-			(at 238.76 223.52 0)
+		(uuid "4026ed5b-ceaa-4908-a258-ec63ea219827")
+		(property "Reference" "SW61"
+			(at 530.86 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15382,8 +14742,8 @@
 				)
 			)
 		)
-		(property "Value" "4"
-			(at 238.76 226.06 0)
+		(property "Value" "RIGHTCTRL"
+			(at 530.86 287.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15392,8 +14752,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 238.76 226.06 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 530.86 287.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15404,7 +14764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 226.06 0)
+			(at 530.86 287.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15415,7 +14775,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 238.76 231.14 0)
+			(at 530.86 292.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15426,15 +14786,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf5a32f6-1634-4b16-b692-a8f22ae09cd4")
+			(uuid "b8764048-a1f7-4de3-b0f7-2d62361972cb")
 		)
 		(pin "2"
-			(uuid "26aee8d3-3507-43d2-a3ab-31d1014f6edb")
+			(uuid "30ff7c79-8197-42a2-8d6f-6c606967c3c2")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW18")
+					(reference "SW61")
 					(unit 1)
 				)
 			)
@@ -15442,7 +14802,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 438.15 289.56 0)
+		(at 125.73 231.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15451,9 +14811,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4320026d-5803-4e79-a866-59ea6a81bc30")
-		(property "Reference" "SW9"
-			(at 438.15 281.94 0)
+		(uuid "43b219ed-fa1d-4178-983f-4936ef7b39fb")
+		(property "Reference" "SW2"
+			(at 125.73 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15462,8 +14822,8 @@
 				)
 			)
 		)
-		(property "Value" "Right_Alt"
-			(at 438.15 284.48 0)
+		(property "Value" "1"
+			(at 125.73 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15472,8 +14832,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 438.15 284.48 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 125.73 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15484,7 +14844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 438.15 284.48 0)
+			(at 125.73 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15495,7 +14855,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 438.15 289.56 0)
+			(at 125.73 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15506,15 +14866,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "406e49eb-c944-4083-88a4-45bf4737ff9d")
+			(uuid "f5b0e0a3-0a5f-46b3-ac75-45b90ed18155")
 		)
 		(pin "2"
-			(uuid "31e5bbba-3209-490b-905e-0b41171b21ee")
+			(uuid "db2f46bf-5b8c-4049-8ff0-fb40c001b8d4")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW9")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -15609,6 +14969,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 274.32 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44a5657b-2ead-4880-a82c-e652d638452c")
+		(property "Reference" "SW6"
+			(at 274.32 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5"
+			(at 274.32 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 274.32 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 274.32 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91090853-0a4e-4922-b16a-0bfe95caa221")
+		)
+		(pin "2"
+			(uuid "ad9001d6-9cae-433e-9b23-259d3b7371d5")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 350.52 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4851f72f-6540-4951-bb44-bf684eb249c0")
+		(property "Reference" "SW8"
+			(at 350.52 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "7"
+			(at 350.52 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 350.52 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 350.52 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90c7f94e-6e38-447c-83d1-d56e43c83d57")
+		)
+		(pin "2"
+			(uuid "889cd2e2-de0d-4a7c-a491-f2f0926a7707")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 340.36 35.56 0)
 		(unit 1)
@@ -15697,6 +15217,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 163.83 289.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49569005-fee3-4305-bf58-b08b150f37c6")
+		(property "Reference" "SW56"
+			(at 163.83 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LEFTALT"
+			(at 163.83 284.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 163.83 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 163.83 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "acc67725-1e46-4230-9f57-19ff03e742d0")
+		)
+		(pin "2"
+			(uuid "86d33cb4-a22f-48fa-a9d2-8930fd3365d7")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 318.77 27.94 0)
 		(unit 1)
@@ -15769,86 +15369,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 238.76 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "49ec4643-99e0-48ac-805c-65eff3a79a21")
-		(property "Reference" "SW30"
-			(at 238.76 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 238.76 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 238.76 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 238.76 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 238.76 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "24806e0a-8956-4ae1-adb7-dec8aeca14ab")
-		)
-		(pin "2"
-			(uuid "b4ed5d9e-8ed7-4983-a2d1-82a476c94af1")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW30")
 					(unit 1)
 				)
 			)
@@ -16133,6 +15653,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 350.52 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e1da403-4f27-49e9-9d42-ac8089573ca4")
+		(property "Reference" "SW36"
+			(at 350.52 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "J"
+			(at 350.52 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 350.52 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 350.52 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84224577-0235-4c57-b253-cb93ab3be155")
+		)
+		(pin "2"
+			(uuid "dabd2d90-b320-496c-9d0f-6b2f9c065f2a")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 363.22 85.09 0)
 		(unit 1)
@@ -16205,6 +15805,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 274.32 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ea87d7b-eb9f-441a-8f4e-62ae701fbc71")
+		(property "Reference" "SW34"
+			(at 274.32 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "G"
+			(at 274.32 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 274.32 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 274.32 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ddff126-88ad-4965-b573-ce2201eec0be")
+		)
+		(pin "2"
+			(uuid "885ab637-0ad5-4272-ba9d-4fdc9b01ed08")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -16299,86 +15979,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 408.94 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4fdfd511-7219-4f8e-997f-cb7ac9340081")
-		(property "Reference" "SW35"
-			(at 408.94 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "O"
-			(at 408.94 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 408.94 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 408.94 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ddc94b36-08e5-4404-9bb0-dc7cc0fc74fa")
-		)
-		(pin "2"
-			(uuid "bd42c8ed-f379-4230-ae41-1940a192c30b")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 340.36 170.18 0)
 		(unit 1)
@@ -16461,6 +16061,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 200.66 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50df373e-91a8-438d-9a7d-115df4e4bfa0")
+		(property "Reference" "SW4"
+			(at 200.66 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3"
+			(at 200.66 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 200.66 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 200.66 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "901d2ca4-8da9-48cf-b074-ede42e558d12")
+		)
+		(pin "2"
+			(uuid "b3722e75-910c-4461-ae4b-ee02e96fb1a8")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -16736,7 +16416,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 350.52 257.81 0)
+		(at 311.15 231.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16745,9 +16425,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "538868e2-4024-4479-a3c2-de34e32b6672")
-		(property "Reference" "SW46"
-			(at 350.52 250.19 0)
+		(uuid "548c48f5-bd7d-4d6a-a568-8b1d81a3b9f4")
+		(property "Reference" "SW7"
+			(at 311.15 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16756,8 +16436,8 @@
 				)
 			)
 		)
-		(property "Value" "J"
-			(at 350.52 252.73 0)
+		(property "Value" "6"
+			(at 311.15 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16766,8 +16446,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 350.52 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 311.15 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16778,7 +16458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 350.52 252.73 0)
+			(at 311.15 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16789,7 +16469,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 350.52 257.81 0)
+			(at 311.15 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16800,15 +16480,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c78aebde-da60-4089-b83a-15c661b37f03")
+			(uuid "e3e57f61-6ab2-4ec7-9643-109d82d3dd8f")
 		)
 		(pin "2"
-			(uuid "4412d7d0-04e9-46b2-a9db-5facc369f10c")
+			(uuid "e92f4b8f-8580-4e6f-a1cf-a7ebd805c149")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW46")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
@@ -17069,86 +16749,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 274.32 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "575c0d24-58f6-40f6-93a6-a7112e39e648")
-		(property "Reference" "SW55"
-			(at 274.32 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B"
-			(at 274.32 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 274.32 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 274.32 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f4668ee5-9982-4ac8-bbdc-31fbb9104df5")
-		)
-		(pin "2"
-			(uuid "671841d9-d72e-4d9d-993a-ace20a8a88b1")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 363.22 104.14 0)
 		(unit 1)
@@ -17221,6 +16821,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 125.73 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57e80155-5a88-4251-9e69-c36ae510567d")
+		(property "Reference" "SW30"
+			(at 125.73 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A"
+			(at 125.73 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 125.73 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 125.73 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcf6ba4b-39d0-4e2f-973f-75d4dac8bcda")
+		)
+		(pin "2"
+			(uuid "a95e5bb2-5eb7-4683-b988-fa378d7bec4e")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW30")
 					(unit 1)
 				)
 			)
@@ -18171,86 +17851,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 381 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62f369ee-36c9-405b-885e-2b2bf0bc4ec5")
-		(property "Reference" "SW22"
-			(at 381 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "8"
-			(at 381 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 381 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 381 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1fdfb3cc-ffb9-40bd-8da2-4bf0b0b3dd50")
-		)
-		(pin "2"
-			(uuid "f8b6e0fa-7745-4186-ad30-1f536e880c5d")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 229.87 231.14 180)
 		(unit 1)
@@ -18509,166 +18109,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 350.52 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "649a3d76-95f0-4d0d-b921-c7caf617dc22")
-		(property "Reference" "SW57"
-			(at 350.52 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M"
-			(at 350.52 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 350.52 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 350.52 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 350.52 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cc564822-516c-46c2-8a71-a6b67e5d0a93")
-		)
-		(pin "2"
-			(uuid "b83a935c-fc90-49fd-ae88-4ef6acd4a5cd")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 381 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "64a2354c-f3f0-40ea-8e23-d1f9efaaf298")
-		(property "Reference" "SW58"
-			(at 381 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ","
-			(at 381 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 381 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 381 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cd136236-cf67-4684-9bb2-f7365bbd359d")
-		)
-		(pin "2"
-			(uuid "29dc5110-388c-4244-b8b6-272239e6e646")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 74.93 60.96 0)
 		(unit 1)
@@ -18848,86 +18288,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 125.73 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67ef9fca-dc51-4e3d-940a-f6d126d1213f")
-		(property "Reference" "SW40"
-			(at 125.73 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A"
-			(at 125.73 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 125.73 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 125.73 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "590ebe2c-2f8a-4c09-8a7b-1888642c60dd")
-		)
-		(pin "2"
-			(uuid "8c83ae7b-f201-4876-83cc-9a22b72a0952")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW40")
 					(unit 1)
 				)
 			)
@@ -19638,6 +18998,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 408.94 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cbb73c2-8a48-47df-8ad5-48766b526e8c")
+		(property "Reference" "SW51"
+			(at 408.94 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "."
+			(at 408.94 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 408.94 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 408.94 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 408.94 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7ead168d-c900-4f11-8f59-b44d2610be1d")
+		)
+		(pin "2"
+			(uuid "41c6050d-74ad-42b7-bdc7-cb556056101a")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 530.86 246.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ecc37cb-5c2d-4ebc-851c-69fd2088f227")
+		(property "Reference" "SW28"
+			(at 530.86 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "\\"
+			(at 530.86 241.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.50u"
+			(at 530.86 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 530.86 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 530.86 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5464f5b-a9d1-43c9-84e7-047b37dfe650")
+		)
+		(pin "2"
+			(uuid "ea254189-1d8c-4dee-9943-a66bcdbed0df")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 50.8 121.92 0)
 		(unit 1)
@@ -19822,6 +19342,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 467.36 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70a208da-1092-44c9-9cda-85f0ee8d78b7")
+		(property "Reference" "SW40"
+			(at 467.36 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "'"
+			(at 467.36 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 467.36 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 467.36 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 467.36 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c41ba8f6-c2fb-47e7-8015-0f9f42e4b77d")
+		)
+		(pin "2"
+			(uuid "efb0a420-c2df-4618-bca5-8a02d20d8d12")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 438.15 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "725fed0b-20fc-4464-9811-2f29ef56ffd5")
+		(property "Reference" "SW11"
+			(at 438.15 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 438.15 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 438.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 438.15 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b59fff24-11c9-474a-9b0d-fe71d9386769")
+		)
+		(pin "2"
+			(uuid "b1daf7eb-0687-4491-aa0c-7b1e4ad74172")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 400.05 257.81 180)
 		(unit 1)
@@ -19924,166 +19604,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 311.15 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7400060e-e9d2-417d-8f52-5e73f4c099cc")
-		(property "Reference" "SW56"
-			(at 311.15 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "N"
-			(at 311.15 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 311.15 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 311.15 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bd44456b-bfb3-4ed0-afc4-dda28fca889c")
-		)
-		(pin "2"
-			(uuid "02cf318c-3dc1-4477-b978-b2b8f95118c4")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 125.73 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74787ee2-e514-42a3-bf94-7fc21b733639")
-		(property "Reference" "SW51"
-			(at 125.73 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Z"
-			(at 125.73 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 125.73 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 125.73 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "197fdb43-cd8c-4adb-9099-212579c93a8c")
-		)
-		(pin "2"
-			(uuid "cc2409d4-3bb8-4860-9f59-adec3f1629af")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 49.53 100.33 90)
 		(unit 1)
@@ -20158,6 +19678,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 274.32 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75afc7e8-505f-4104-b6c5-e59792ed888f")
+		(property "Reference" "SW20"
+			(at 274.32 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "T"
+			(at 274.32 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 274.32 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 274.32 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a068a40c-0dd1-49cb-a653-0ba6d0c18b33")
+		)
+		(pin "2"
+			(uuid "c0f584e4-c964-46e6-afd7-628ea890a757")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW20")
 					(unit 1)
 				)
 			)
@@ -20338,86 +19938,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "786b6f33-b3df-4082-b189-960252cf0c2d")
-		(property "Reference" "SW2"
-			(at 88.9 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Caps_Lock"
-			(at 88.9 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.75u_PCB"
-			(at 88.9 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "499cbfe1-6f24-4a32-a5cf-0bb907ec0140")
-		)
-		(pin "2"
-			(uuid "2a465e48-496f-404d-b220-a389a81be387")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -20639,6 +20159,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 500.38 232.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d29ba9f-af1c-4657-82d6-d0aaaac280d9")
+		(property "Reference" "SW13"
+			(at 500.38 224.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "="
+			(at 500.38 227.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 500.38 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 500.38 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 500.38 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b84d2011-7be4-4dc0-968c-2f995f4571b3")
+		)
+		(pin "2"
+			(uuid "8f8a5091-93b8-4173-83e9-0e896cb8b5be")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW13")
 					(unit 1)
 				)
 			)
@@ -20997,6 +20597,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 125.73 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "813ce3fb-c5de-423b-84ec-19a85bd7c0f0")
+		(property "Reference" "SW43"
+			(at 125.73 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Z"
+			(at 125.73 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 125.73 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 125.73 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20dcfafe-a3af-48b3-bf03-f5980baaef5b")
+		)
+		(pin "2"
+			(uuid "743bd595-3497-4496-b5d2-089e1ae707f9")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:AMS1117-3.3")
 		(at 85.09 27.94 0)
 		(unit 1)
@@ -21254,86 +20934,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D88")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 438.15 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82f68f14-d11c-45ea-bad5-65be1040250b")
-		(property "Reference" "SW60"
-			(at 438.15 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "/"
-			(at 438.15 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 438.15 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 438.15 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1c5a4d50-4b99-40d6-8210-74ccfa27dcda")
-		)
-		(pin "2"
-			(uuid "edf65688-d189-4617-a217-962bac76616e")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW60")
 					(unit 1)
 				)
 			)
@@ -21682,86 +21282,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 311.15 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "85a77e52-cdd0-4c65-b921-6bfc0c1af496")
-		(property "Reference" "SW32"
-			(at 311.15 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Y"
-			(at 311.15 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 311.15 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 311.15 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5972cf1d-c816-4df3-8348-52e2669e15dc")
-		)
-		(pin "2"
-			(uuid "984c6a70-4ddc-4591-9556-936b809202b0")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 312.42 170.18 0)
 		(unit 1)
@@ -21844,86 +21364,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 438.15 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86273be8-b07d-48e0-91f3-e4b350f633be")
-		(property "Reference" "SW24"
-			(at 438.15 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 438.15 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 438.15 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 438.15 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a386035d-e0eb-4c45-adf4-b46f64dc7c78")
-		)
-		(pin "2"
-			(uuid "9955edba-3117-478c-a17b-ea9dd8cee490")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW24")
 					(unit 1)
 				)
 			)
@@ -22281,7 +21721,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 163.83 231.14 0)
+		(at 274.32 273.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22290,9 +21730,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8b96d479-c97d-4abb-bb9e-0362f491ca13")
-		(property "Reference" "SW16"
-			(at 163.83 223.52 0)
+		(uuid "8aeb046d-75b4-4f8c-8f9f-dcbee4bbe12d")
+		(property "Reference" "SW47"
+			(at 274.32 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22301,8 +21741,8 @@
 				)
 			)
 		)
-		(property "Value" "2"
-			(at 163.83 226.06 0)
+		(property "Value" "B"
+			(at 274.32 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22311,8 +21751,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 163.83 226.06 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 274.32 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22323,7 +21763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 226.06 0)
+			(at 274.32 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22334,7 +21774,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 231.14 0)
+			(at 274.32 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22345,15 +21785,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7eb9f58-411b-4d59-b1fc-3f3caa855e6b")
+			(uuid "2e2c8a60-3527-4810-b74e-c0b499bb78fc")
 		)
 		(pin "2"
-			(uuid "778f6144-2815-4c33-9a3c-99356c85135d")
+			(uuid "91dd8b0d-48cb-415c-a522-91e10cbf2d18")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW16")
+					(reference "SW47")
 					(unit 1)
 				)
 			)
@@ -22361,7 +21801,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 311.15 257.81 0)
+		(at 381 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22370,9 +21810,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8d243b3d-7397-40e2-9c2d-877d2659c1e4")
-		(property "Reference" "SW45"
-			(at 311.15 250.19 0)
+		(uuid "8c186807-5399-48a0-af3b-44a78d81927a")
+		(property "Reference" "SW23"
+			(at 381 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22381,8 +21821,8 @@
 				)
 			)
 		)
-		(property "Value" "H"
-			(at 311.15 252.73 0)
+		(property "Value" "I"
+			(at 381 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22391,8 +21831,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 311.15 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 381 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22403,7 +21843,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 311.15 252.73 0)
+			(at 381 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22414,7 +21854,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 257.81 0)
+			(at 381 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22425,15 +21865,335 @@
 			)
 		)
 		(pin "1"
-			(uuid "b56d8e4d-8f07-42ac-9b40-c54cea585b36")
+			(uuid "875bc09a-87f9-4893-91ab-338a224f00e1")
 		)
 		(pin "2"
-			(uuid "d508f499-84d7-4f8d-a74a-9306a8a147a7")
+			(uuid "41de3f49-ca21-412e-bee2-3eaeb07a12c1")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW45")
+					(reference "SW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 238.76 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c5afbf9-10ee-4b70-a1be-651fc4360c6e")
+		(property "Reference" "SW46"
+			(at 238.76 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "V"
+			(at 238.76 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 238.76 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 238.76 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5aba6a5e-19f1-433d-ae64-f8e5cbfb23de")
+		)
+		(pin "2"
+			(uuid "8fbeb71b-9019-43ce-8af6-8cb85ff79829")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 408.94 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e8d0adf-71e0-43ce-8006-a61f07bcd1f6")
+		(property "Reference" "SW38"
+			(at 408.94 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 408.94 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 408.94 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 408.94 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 408.94 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e409641e-3c22-4a12-a735-e3eb326bc9de")
+		)
+		(pin "2"
+			(uuid "c1de5664-d9e0-4163-90d3-026fe3fffa26")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 438.15 289.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ef84b58-484f-4047-8554-12f921a756e6")
+		(property "Reference" "SW58"
+			(at 438.15 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RIGHTALT"
+			(at 438.15 284.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 438.15 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 438.15 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f51de644-0054-47e9-b3c5-0e5d24e52dfe")
+		)
+		(pin "2"
+			(uuid "d4b62bbd-7928-4a0b-9390-fc2501652df3")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 125.73 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9008f9c6-8ac8-4d5c-a294-8f46e402261f")
+		(property "Reference" "SW16"
+			(at 125.73 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q"
+			(at 125.73 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 125.73 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 125.73 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "795e6b85-7847-4b82-92d3-0db98fdc3cc2")
+		)
+		(pin "2"
+			(uuid "9fe0fb8c-3451-4c6b-9ee7-de631ee0b203")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW16")
 					(unit 1)
 				)
 			)
@@ -22654,7 +22414,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 88.9 273.05 0)
+		(at 200.66 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22663,9 +22423,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "949e54ef-5140-48f1-9572-9c85e0fe0658")
-		(property "Reference" "SW3"
-			(at 88.9 265.43 0)
+		(uuid "944f43ea-3512-457a-b975-b3d100ea7a82")
+		(property "Reference" "SW18"
+			(at 200.66 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22674,8 +22434,8 @@
 				)
 			)
 		)
-		(property "Value" "Left_Shift"
-			(at 88.9 267.97 0)
+		(property "Value" "E"
+			(at 200.66 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22684,8 +22444,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.25u_PCB"
-			(at 88.9 267.97 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 200.66 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22696,7 +22456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 267.97 0)
+			(at 200.66 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22707,7 +22467,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 273.05 0)
+			(at 200.66 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22718,15 +22478,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "95560423-5e82-4d28-b753-cacf91882e9f")
+			(uuid "47cd1216-2b2b-41b8-b8bc-9aea3a1b44ee")
 		)
 		(pin "2"
-			(uuid "d36daf55-2ac6-419a-8892-06e094da5d61")
+			(uuid "f2def560-0128-4dd5-ae61-e135acc8ce22")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW3")
+					(reference "SW18")
 					(unit 1)
 				)
 			)
@@ -23089,86 +22849,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 467.36 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97da6678-d421-40d7-8a3c-7827d746e0c0")
-		(property "Reference" "SW6"
-			(at 467.36 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Right_Shift"
-			(at 467.36 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.75u_PCB"
-			(at 467.36 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 467.36 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9fb16a6f-6ed5-46a0-9437-5e868d008a8b")
-		)
-		(pin "2"
-			(uuid "800519f6-b193-4b02-befd-b9efba730fa5")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 363.22 142.24 0)
 		(unit 1)
@@ -23247,86 +22927,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 125.73 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a1df9e1-31b4-4e82-85ee-79eeacbea0f9")
-		(property "Reference" "SW27"
-			(at 125.73 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q"
-			(at 125.73 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 125.73 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 125.73 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "958566d6-3b0f-4250-981f-54b6f60a4bd4")
-		)
-		(pin "2"
-			(uuid "c025895b-cd4b-46c1-9e0a-f213a8a7c755")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 68.58 35.56 0)
 		(unit 1)
@@ -23399,6 +22999,166 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b555652-5498-4840-992f-3f75775c70cc")
+		(property "Reference" "SW42"
+			(at 88.9 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LEFTSHIFT"
+			(at 88.9 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_2.25u"
+			(at 88.9 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d18f14c2-65c0-4251-bcd8-fdb9bcd45b21")
+		)
+		(pin "2"
+			(uuid "66acf9b6-9348-4c39-82da-6c404156f94d")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 163.83 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b60b841-8078-4227-a0cd-769d745830b6")
+		(property "Reference" "SW31"
+			(at 163.83 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "S"
+			(at 163.83 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 163.83 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 163.83 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e56eccc5-f287-4772-9a2f-9c274177f93d")
+		)
+		(pin "2"
+			(uuid "72d1b6b5-564f-49c3-b1cf-c97fd263cfce")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW31")
 					(unit 1)
 				)
 			)
@@ -23501,166 +23261,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 163.83 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c76b73d-1b91-4de0-9b91-111f59bb888c")
-		(property "Reference" "SW41"
-			(at 163.83 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "S"
-			(at 163.83 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 163.83 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7309df2f-2e6b-4804-b99f-905b3833dd9a")
-		)
-		(pin "2"
-			(uuid "7720d6d5-c61f-434c-b446-d4c852c3a306")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 163.83 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9de7280e-b993-47c4-bde7-d826c321f75f")
-		(property "Reference" "SW28"
-			(at 163.83 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "W"
-			(at 163.83 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 163.83 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a4d11bbf-58c8-4389-b96e-87614d51861c")
-		)
-		(pin "2"
-			(uuid "0efda069-74fb-480f-82dc-a2c272b9e513")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW28")
 					(unit 1)
 				)
 			)
@@ -23851,6 +23451,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 408.94 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1fc71b8-c7eb-4a9c-8a42-7ee0511e4cee")
+		(property "Reference" "SW24"
+			(at 408.94 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "O"
+			(at 408.94 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 408.94 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 408.94 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 408.94 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdf4ce38-bf87-4587-b0d6-a28ce6b475aa")
+		)
+		(pin "2"
+			(uuid "70e2db66-994a-40ca-a257-d64482a3cd85")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW24")
 					(unit 1)
 				)
 			)
@@ -24213,6 +23893,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 500.38 290.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a544370c-0ddf-4657-97d7-5b1b43f1e018")
+		(property "Reference" "SW60"
+			(at 500.38 283.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MENU"
+			(at 500.38 285.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 500.38 285.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 500.38 285.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 500.38 290.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "28f4f8c6-8cfd-43a6-b10e-86c390abed4e")
+		)
+		(pin "2"
+			(uuid "43c513e5-7b95-4e35-bc99-96a64d3808fd")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 91.44 0)
 		(unit 1)
@@ -24495,166 +24255,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 311.15 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a708b331-1b14-4e19-bab5-5fbfed7ac6a3")
-		(property "Reference" "SW20"
-			(at 311.15 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6"
-			(at 311.15 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 311.15 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 311.15 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 311.15 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b9e48ed-3a1b-4c07-9c79-c7bf4ab91c92")
-		)
-		(pin "2"
-			(uuid "834b13c3-1b5f-4a44-87c3-5ea5f984e92a")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 408.94 257.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8a13cc6-8d0d-4ac1-85df-3a942975bef6")
-		(property "Reference" "SW48"
-			(at 408.94 250.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L"
-			(at 408.94 252.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 408.94 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 252.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 408.94 257.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "583b957a-805f-4d46-ae81-e0d6a155b1e9")
-		)
-		(pin "2"
-			(uuid "6a8b592a-8016-4318-88f5-2310f339c077")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 229.87 170.18 0)
 		(unit 1)
@@ -24737,6 +24337,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa8eed3d-3225-4bc9-be20-d00c8f598dcb")
+		(property "Reference" "SW1"
+			(at 88.9 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESC"
+			(at 88.9 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 88.9 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "927ffd3e-49b0-41d2-b2a2-0dd38e824a74")
+		)
+		(pin "2"
+			(uuid "d8903f6d-179b-4c3f-963b-6c3ef455401d")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -24948,7 +24628,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 238.76 273.05 0)
+		(at 530.86 233.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24957,9 +24637,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "af18ff47-3b17-4fe0-96c7-68c7ce860b0d")
-		(property "Reference" "SW54"
-			(at 238.76 265.43 0)
+		(uuid "aee1c121-7d08-4acd-9676-c07bbece1a8c")
+		(property "Reference" "SW14"
+			(at 530.86 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24968,8 +24648,8 @@
 				)
 			)
 		)
-		(property "Value" "V"
-			(at 238.76 267.97 0)
+		(property "Value" "BACKSPACE"
+			(at 530.86 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24978,8 +24658,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 238.76 267.97 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_2.00u"
+			(at 530.86 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24990,7 +24670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 267.97 0)
+			(at 530.86 228.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25001,7 +24681,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 238.76 273.05 0)
+			(at 530.86 233.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25012,15 +24692,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6bf2f29-7bdf-4bba-ac49-3795fab16eb7")
+			(uuid "ccd5824a-2eef-4bdf-bf30-0f427baefe86")
 		)
 		(pin "2"
-			(uuid "0229bbdd-fb57-46df-b2f5-60cb08c090af")
+			(uuid "144dba87-0375-4639-8d0e-882712fcd05a")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW54")
+					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -25116,7 +24796,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 381 257.81 0)
+		(at 163.83 231.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25125,9 +24805,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b0d36b1e-6d86-4c89-871e-518e9987ba91")
-		(property "Reference" "SW47"
-			(at 381 250.19 0)
+		(uuid "b08bb764-a86c-4a40-a627-dd11db149256")
+		(property "Reference" "SW3"
+			(at 163.83 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25136,8 +24816,8 @@
 				)
 			)
 		)
-		(property "Value" "K"
-			(at 381 252.73 0)
+		(property "Value" "2"
+			(at 163.83 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25146,8 +24826,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 381 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 163.83 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25158,7 +24838,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 381 252.73 0)
+			(at 163.83 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25169,7 +24849,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 381 257.81 0)
+			(at 163.83 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25180,15 +24860,95 @@
 			)
 		)
 		(pin "1"
-			(uuid "297b39a8-8151-4365-879f-0ced980e8f04")
+			(uuid "2a860fde-59a7-49e4-bf9f-291cedcd1a67")
 		)
 		(pin "2"
-			(uuid "8b2beed6-d8a5-446f-9e1e-1666ba3493e1")
+			(uuid "55c6e471-36bf-4b10-b56a-c05e3e9b3b30")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW47")
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 467.36 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b368af35-314f-4a9e-b233-280f9edd6b19")
+		(property "Reference" "SW12"
+			(at 467.36 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-"
+			(at 467.36 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 467.36 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 467.36 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 467.36 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2eb0e3f2-0ffa-497c-a832-b403a185d67b")
+		)
+		(pin "2"
+			(uuid "0abaef8c-46ae-474e-8684-3ecd37a22578")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW12")
 					(unit 1)
 				)
 			)
@@ -25362,7 +25122,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 238.76 257.81 0)
+		(at 311.15 289.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25371,9 +25131,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b798c96d-97d8-496a-aefa-2f3eaabc6d21")
-		(property "Reference" "SW43"
-			(at 238.76 250.19 0)
+		(uuid "b506a869-d56d-4267-b78c-078d4a3f9db1")
+		(property "Reference" "SW57"
+			(at 311.15 281.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25382,8 +25142,8 @@
 				)
 			)
 		)
-		(property "Value" "F"
-			(at 238.76 252.73 0)
+		(property "Value" "SPACE"
+			(at 311.15 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25392,8 +25152,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 238.76 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_6.25u"
+			(at 311.15 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25404,7 +25164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 252.73 0)
+			(at 311.15 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25415,7 +25175,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 238.76 257.81 0)
+			(at 311.15 289.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25426,15 +25186,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e1814eb8-de19-4092-bc0c-2f39106ac899")
+			(uuid "8186e24a-ca91-425c-ae78-0189c505debd")
 		)
 		(pin "2"
-			(uuid "cb4d90ba-0795-4c78-9a50-44e5efb07829")
+			(uuid "56cf0fed-f188-4ff9-bf12-6764824f258f")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW43")
+					(reference "SW57")
 					(unit 1)
 				)
 			)
@@ -25442,7 +25202,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 163.83 273.05 0)
+		(at 311.15 273.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -25451,9 +25211,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b8d74017-ffd9-4cb1-87c7-f2461f800309")
-		(property "Reference" "SW52"
-			(at 163.83 265.43 0)
+		(uuid "b729a17c-bef4-4998-9014-9e65a3db79de")
+		(property "Reference" "SW48"
+			(at 311.15 265.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25462,8 +25222,8 @@
 				)
 			)
 		)
-		(property "Value" "X"
-			(at 163.83 267.97 0)
+		(property "Value" "N"
+			(at 311.15 267.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25472,8 +25232,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 163.83 267.97 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 311.15 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25484,7 +25244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 267.97 0)
+			(at 311.15 267.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25495,7 +25255,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 273.05 0)
+			(at 311.15 273.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25506,15 +25266,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4ea6cd9e-5f7f-4537-91e9-47a78754beec")
+			(uuid "7a1eb356-c29b-4446-82e7-01f4e6f84335")
 		)
 		(pin "2"
-			(uuid "a44ff9f7-5305-475c-94a4-06c0a3f1e005")
+			(uuid "3cfeba42-f23b-486d-8b24-ec1438d0d437")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW52")
+					(reference "SW48")
 					(unit 1)
 				)
 			)
@@ -25701,6 +25461,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 163.83 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb5c2288-7ae4-4043-9866-416a1a8bc927")
+		(property "Reference" "SW44"
+			(at 163.83 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "X"
+			(at 163.83 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 163.83 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 163.83 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "464aad37-1f3f-4db4-bb73-7ecc8d9f5390")
+		)
+		(pin "2"
+			(uuid "44a0a5c6-a830-4301-a18f-c2cf683f2113")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 69.85 86.36 0)
 		(unit 1)
@@ -25773,6 +25613,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 381 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbd2eb7d-0539-42a2-91e1-e92915a1c314")
+		(property "Reference" "SW37"
+			(at 381 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "K"
+			(at 381 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 381 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 381 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f30e6d79-600d-45f5-bdd9-3825468e9ad2")
+		)
+		(pin "2"
+			(uuid "8f094610-b127-4388-a041-a1c6de4c0d8f")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW37")
 					(unit 1)
 				)
 			)
@@ -26042,7 +25962,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 500.38 290.83 0)
+		(at 350.52 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26051,9 +25971,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bf179300-a178-4a39-9b20-23633f37a1d3")
-		(property "Reference" "SW13"
-			(at 500.38 283.21 0)
+		(uuid "c0a2ca2a-8536-4fa5-b2bc-04d6f8063a5f")
+		(property "Reference" "SW22"
+			(at 350.52 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26062,8 +25982,8 @@
 				)
 			)
 		)
-		(property "Value" "Fn"
-			(at 500.38 285.75 0)
+		(property "Value" "U"
+			(at 350.52 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26072,8 +25992,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 500.38 285.75 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 350.52 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26084,7 +26004,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 500.38 285.75 0)
+			(at 350.52 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26095,7 +26015,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 500.38 290.83 0)
+			(at 350.52 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26106,15 +26026,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8d8dc66c-3b38-4695-ab53-bc96ff96a3d4")
+			(uuid "187a5bfc-a24a-4a07-bb6a-45ac27f48f37")
 		)
 		(pin "2"
-			(uuid "b1c563b3-4458-4cc7-859a-a5bb03c3d2b8")
+			(uuid "ff1dc30b-4439-441d-80f9-ccf7ba6df229")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW13")
+					(reference "SW22")
 					(unit 1)
 				)
 			)
@@ -26485,6 +26405,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 381 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c302820a-f6d3-48f9-8aa3-2e99400fd0e6")
+		(property "Reference" "SW9"
+			(at 381 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8"
+			(at 381 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 381 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 381 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d803718a-b434-4c88-9f04-1cd34e14a9a2")
+		)
+		(pin "2"
+			(uuid "1ae6d0ce-1981-458c-aabc-dd002ae272a5")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW9")
 					(unit 1)
 				)
 			)
@@ -26885,86 +26885,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 200.66 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5654cdc-5b30-4f92-94ee-7362bace98db")
-		(property "Reference" "SW17"
-			(at 200.66 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3"
-			(at 200.66 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 200.66 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 200.66 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be7725a6-32ae-4828-8cab-ab5a33b7481f")
-		)
-		(pin "2"
-			(uuid "f5d0cb77-7dde-4acb-b0c5-8246982f3a08")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 368.3 62.23 0)
 		(unit 1)
@@ -27044,7 +26964,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 274.32 257.81 0)
+		(at 88.9 289.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27053,9 +26973,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c91a6fd1-f0c8-40ca-b954-f764d92caf9c")
-		(property "Reference" "SW44"
-			(at 274.32 250.19 0)
+		(uuid "c8b90ca9-01ce-4865-9684-3d8f1b0718fe")
+		(property "Reference" "SW54"
+			(at 88.9 281.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27064,8 +26984,8 @@
 				)
 			)
 		)
-		(property "Value" "G"
-			(at 274.32 252.73 0)
+		(property "Value" "LEFTCTRL"
+			(at 88.9 284.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27074,8 +26994,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 274.32 252.73 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 88.9 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27086,7 +27006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 252.73 0)
+			(at 88.9 284.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27097,7 +27017,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 274.32 257.81 0)
+			(at 88.9 289.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27108,15 +27028,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "174431fc-743f-49eb-b5da-372466dc2ec3")
+			(uuid "1d372c77-8858-44b6-8b59-2364bc3be09f")
 		)
 		(pin "2"
-			(uuid "e137454a-d5fd-4d03-b334-350a43469d84")
+			(uuid "cc7ab9a3-32d1-4581-bf37-e16fe74dfd53")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW44")
+					(reference "SW54")
 					(unit 1)
 				)
 			)
@@ -27225,6 +27145,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 381 273.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9ffbe07-924e-4ff2-a373-05dbeebd8aaa")
+		(property "Reference" "SW50"
+			(at 381 265.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ","
+			(at 381 267.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 381 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 381 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de401957-befe-4fbe-becf-a214bdf56e12")
+		)
+		(pin "2"
+			(uuid "92e3a9a0-ef45-42a7-a89c-157e25366303")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 80.01 257.81 180)
 		(unit 1)
@@ -27327,6 +27327,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 438.15 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb0b466c-7b95-4c98-958c-f517db1fc230")
+		(property "Reference" "SW39"
+			(at 438.15 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ";"
+			(at 438.15 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 438.15 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 438.15 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c110ced5-88df-48bf-b3fa-8d628c19dde2")
+		)
+		(pin "2"
+			(uuid "ab4c260f-93bc-4341-9b4d-baae2e512f10")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 163.83 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbb2dc3e-5aed-42e7-8e04-092ef3d60032")
+		(property "Reference" "SW17"
+			(at 163.83 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "W"
+			(at 163.83 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 163.83 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 163.83 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6109827c-83c4-4ff8-a557-d7063a9f8b0e")
+		)
+		(pin "2"
+			(uuid "4947ae90-f1a3-4e4a-beb7-bd558881e519")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 229.87 257.81 180)
 		(unit 1)
@@ -27423,166 +27583,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D97")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 163.83 289.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce07992e-0ef4-4311-b220-0f74e14892a5")
-		(property "Reference" "SW12"
-			(at 163.83 281.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Left_Alt"
-			(at 163.83 284.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.25u_PCB"
-			(at 163.83 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 284.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 163.83 289.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b72e788-1420-40ee-ac31-03ee78c2610d")
-		)
-		(pin "2"
-			(uuid "db798f63-51c3-486a-8d5a-615b0e9bbb75")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 381 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0f396a3-d24b-4671-8ceb-587cbbf99835")
-		(property "Reference" "SW34"
-			(at 381 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "I"
-			(at 381 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 381 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 381 238.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 381 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2519e2a6-14d3-4125-9578-c3dd76922f0d")
-		)
-		(pin "2"
-			(uuid "9443cd26-d56f-437b-ac32-6b31b8426ccd")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -27692,7 +27692,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 500.38 232.41 0)
+		(at 467.36 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -27701,9 +27701,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d6939ba6-d373-4a83-9517-4b7b4dd54ec2")
+		(uuid "d6f4ef2b-fd1c-43bc-bb4d-8998e16d21de")
 		(property "Reference" "SW26"
-			(at 500.38 224.79 0)
+			(at 467.36 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27712,8 +27712,8 @@
 				)
 			)
 		)
-		(property "Value" "="
-			(at 500.38 227.33 0)
+		(property "Value" "["
+			(at 467.36 238.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -27722,8 +27722,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 500.38 227.33 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 467.36 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27734,7 +27734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 500.38 227.33 0)
+			(at 467.36 238.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27745,7 +27745,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 500.38 232.41 0)
+			(at 467.36 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27756,15 +27756,95 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b81b663-c045-4dd6-8501-21a293681ed2")
+			(uuid "b44bee23-7659-4fde-ba36-7d8620bac537")
 		)
 		(pin "2"
-			(uuid "5c332e22-ec58-4291-b50e-81299b8276fd")
+			(uuid "5828c5af-84a9-4b85-94dd-838455527600")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "SW26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 467.36 289.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d79eeff1-2315-4505-8c8d-7226ec1c7abd")
+		(property "Reference" "SW59"
+			(at 467.36 281.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FN"
+			(at 467.36 284.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.25u"
+			(at 467.36 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 467.36 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 467.36 289.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "613975f4-6ea1-4274-a7fc-eac9e8ec78dd")
+		)
+		(pin "2"
+			(uuid "027e7fe0-8bf9-4182-b576-6073d10edbfc")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW59")
 					(unit 1)
 				)
 			)
@@ -27843,6 +27923,326 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 500.38 245.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d920ea3e-b51f-4155-bfae-b5fd1556e0ee")
+		(property "Reference" "SW27"
+			(at 500.38 237.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "]"
+			(at 500.38 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 500.38 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 500.38 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 500.38 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a35e6ff0-18b4-466e-8721-a0daa79c7d06")
+		)
+		(pin "2"
+			(uuid "d6200c65-bc01-4ae7-8a88-760c6122bac8")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d92c8d6f-9033-4306-82eb-021a062b62ae")
+		(property "Reference" "SW29"
+			(at 88.9 250.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CAPSLOCK"
+			(at 88.9 252.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.75u"
+			(at 88.9 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1adfe5d2-5278-465f-bec0-4a480e111e1f")
+		)
+		(pin "2"
+			(uuid "fa673d55-0dd3-459f-b780-ac4bc04493a5")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 408.94 231.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbd4ddd3-455b-447a-bb57-dd5e157805d7")
+		(property "Reference" "SW10"
+			(at 408.94 223.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "9"
+			(at 408.94 226.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 408.94 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 408.94 226.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 408.94 231.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0fa8056a-5991-472b-a4b0-a8c8f984f5b2")
+		)
+		(pin "2"
+			(uuid "cdd267c1-f252-4ced-b50a-ac33b19e57eb")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 438.15 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dce18168-e4a2-4eb0-9ab4-022769994154")
+		(property "Reference" "SW25"
+			(at 438.15 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "P"
+			(at 438.15 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 438.15 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 438.15 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6b6b627-e171-4c85-a547-071dd2b55049")
+		)
+		(pin "2"
+			(uuid "51ef4fe9-20b2-4910-9cd0-1f3a0d00c5f4")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW25")
 					(unit 1)
 				)
 			)
@@ -28309,86 +28709,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 467.36 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e4dbf7e1-2473-4506-ac69-3e068fb1407e")
-		(property "Reference" "SW25"
-			(at 467.36 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-"
-			(at 467.36 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 467.36 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 467.36 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 467.36 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "edfdba6f-bb91-4397-9b16-89bc6e6c02df")
-		)
-		(pin "2"
-			(uuid "b16d527b-8144-4cf9-80de-9d94899ae0b4")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 200.66 92.71 0)
 		(unit 1)
@@ -28579,6 +28899,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 238.76 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4f60129-a1c9-43cc-9647-8775e94b570b")
+		(property "Reference" "SW19"
+			(at 238.76 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 238.76 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 238.76 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 238.76 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b71d17a-909e-43ea-9386-0c2538a816f7")
+		)
+		(pin "2"
+			(uuid "f31ff8b4-c1d6-4449-8ab1-64a33961bbc6")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 95.25 86.36 0)
 		(unit 1)
@@ -28651,86 +29051,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 125.73 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5a03595-6513-4209-9759-6bc53c9556aa")
-		(property "Reference" "SW15"
-			(at 125.73 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1"
-			(at 125.73 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 125.73 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 125.73 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "720930a7-6e43-4dcd-84f2-9150a7492238")
-		)
-		(pin "2"
-			(uuid "52f4f580-eb70-4dbb-bab0-f5b361609a9e")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW15")
 					(unit 1)
 				)
 			)
@@ -29117,86 +29437,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 530.86 246.38 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee1f9e56-4607-4495-af9a-1498482568e1")
-		(property "Reference" "SW39"
-			(at 530.86 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "\\"
-			(at 530.86 241.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.50u_PCB"
-			(at 530.86 241.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 530.86 241.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 530.86 246.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c3f9b70-995a-4ab9-98b7-b5b8c881ea62")
-		)
-		(pin "2"
-			(uuid "50b0082b-d3be-43fd-8d7f-c78ae990157b")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:SK6812MINI-E")
 		(at 285.75 73.66 0)
 		(unit 1)
@@ -29388,7 +29628,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 467.36 243.84 0)
+		(at 238.76 231.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29397,9 +29637,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f052973f-69b9-40af-aa97-83c8dd12c221")
-		(property "Reference" "SW37"
-			(at 467.36 236.22 0)
+		(uuid "f25cb51a-6c38-4923-8744-d6cdc66c4b9c")
+		(property "Reference" "SW5"
+			(at 238.76 223.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29408,8 +29648,8 @@
 				)
 			)
 		)
-		(property "Value" "["
-			(at 467.36 238.76 0)
+		(property "Value" "4"
+			(at 238.76 226.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29418,8 +29658,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 467.36 238.76 0)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 238.76 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29430,7 +29670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 467.36 238.76 0)
+			(at 238.76 226.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29441,7 +29681,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 467.36 243.84 0)
+			(at 238.76 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29452,255 +29692,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6227021-8be8-41ea-ac4a-26876731844d")
+			(uuid "90d7286f-5e62-4e58-9a66-1ac5c0806f37")
 		)
 		(pin "2"
-			(uuid "6f9a9c3b-94a4-4bd3-8650-2538c4cd453b")
+			(uuid "81bca5d7-5f2a-4d02-a08c-fd0f6dd30bd9")
 		)
 		(instances
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 408.94 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f08353a1-a82f-4cab-92fa-0f6b95b58367")
-		(property "Reference" "SW23"
-			(at 408.94 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "9"
-			(at 408.94 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 408.94 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 408.94 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "71f3d097-2748-4efe-954a-9a8044f0a092")
-		)
-		(pin "2"
-			(uuid "6f3b5fcb-ce6d-4327-bed8-935ca8718e65")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 408.94 273.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2121caa-6649-441b-9c80-1b7941b2188d")
-		(property "Reference" "SW59"
-			(at 408.94 265.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "."
-			(at 408.94 267.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 408.94 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 408.94 267.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 408.94 273.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c8d9092c-67a1-4a90-bc00-e012e17d333f")
-		)
-		(pin "2"
-			(uuid "cefadff8-0531-4174-b008-2effe608c178")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 530.86 233.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f505a6f4-ad64-4b47-bb30-c4281e4bd493")
-		(property "Reference" "SW4"
-			(at 530.86 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Backspace"
-			(at 530.86 228.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_2.00u_PCB"
-			(at 530.86 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 530.86 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 530.86 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "01a65f84-fcae-413f-a2f2-8743ed6c51d5")
-		)
-		(pin "2"
-			(uuid "63776ad6-2d3e-498c-b820-c5facff83182")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW4")
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -29881,86 +29881,6 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D89")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6a1927a-be1c-4e2a-9b79-2b2f0f9e640b")
-		(property "Reference" "SW14"
-			(at 88.9 223.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Esc"
-			(at 88.9 226.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 88.9 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9fb5ad71-36bc-4c34-9c11-5a7d6d8cc76d")
-		)
-		(pin "2"
-			(uuid "0467a6a8-093a-4e99-8933-0a7abfdb2da4")
-		)
-		(instances
-			(project "pcb"
-				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
-					(reference "SW14")
 					(unit 1)
 				)
 			)
@@ -30613,6 +30533,86 @@
 			(project "pcb"
 				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
 					(reference "D144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 311.15 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff61c673-db7b-4b49-aac1-b1f24459da62")
+		(property "Reference" "SW21"
+			(at 311.15 236.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Y"
+			(at 311.15 238.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
+			(at 311.15 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 311.15 238.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 311.15 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48bb1f02-b74b-4191-bc58-2e171ef25f54")
+		)
+		(pin "2"
+			(uuid "1b5c4b5d-eee4-4fb6-9622-7b6a24703251")
+		)
+		(instances
+			(project "pcb"
+				(path "/5b90c58b-6c02-4630-a08a-7966f05ffd26"
+					(reference "SW21")
 					(unit 1)
 				)
 			)

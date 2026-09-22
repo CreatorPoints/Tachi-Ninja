@@ -76,12 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "unconnected_items|169886352|34264265|F.Cu|4|b3cc94c8-99f6-4364-9496-655638428583|b3cc94c8-99f6-4364-9496-655638428583",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -167,7 +162,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -705,7 +700,7 @@
         "uuid": "5b90c58b-6c02-4630-a08a-7966f05ffd26"
       }
     ],
-    "used_designators": "#FLG1-3,R1-3,J1,#PWR1-35,C1-7,D1-167,SW1-64,U1-4",
+    "used_designators": "U1-4,SW1-69,D1-167,C1-7,#PWR1-35,J1,R1-3,#FLG1-3",
     "variants": []
   },
   "sheets": [

@@ -1,1 +1,0 @@
-# I will make the kernel later when I will have the propper keyboard pcb built as it required multiple attempts and it cant me made using assumptions (for me)
