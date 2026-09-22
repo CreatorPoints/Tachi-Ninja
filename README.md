@@ -1,5 +1,5 @@
-# Tachi-Ninja
-A 60% Silent Linear mechanical keyboard that has per key RGB lighting and a display for pure asthetics! Made so that I can advance more in this fun cad pathway!
+# Tachi Ninja V2
+A 60% Silent Linear mechanical keyboard that has per key RGB lighting and a display for pure asthetics! Made so that I can advance more in this fun cad pathway! [Now Hot-Swappable!]
 
 ---
 
@@ -13,15 +13,23 @@ I made it because I wanted a actually good keyboard, so instead of buying from o
 
 ---
 
+## Whats this "V2" Thingy?
+So, when this project was submitted for forge, the reviewer returned the project for multiple reasons, one of it being incomplete PCBA, so, I improvised with something much better. The table would be the best:
+|V1|V2|
+|--|--|
+|Permanent MX Switches|Kailh MX Hot Swappable sockets|
+|Very crampy keycaps|Follows universal 19.05mm rule for keyboards|
+|More compact, less polished|Kinda less compact, more polished|
+
 ## Components used:
 The following stuffs were used... Very hacky :)
 - STM32F072C8Tx
 - 1N4148 (x61)
-- Cherry MX Switches (x61)
+- Kailh MX Hot Swappable Sockets (x61)
 - SK6812MINI-E (x63)
 - Resistors (x3)
 - Capacitors (x6)
-- Smol Switches (x2) - For boot purposes
+- Smol Switches (x2) - For boot & NRST purposes
 - USB C 2.0 Receptable 16P
 - AMS1117-3.3V
 - 0.91 Inch I2C OLED Screen
