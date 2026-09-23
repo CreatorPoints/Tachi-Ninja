@@ -51,7 +51,13 @@ Total - $310.80
 ---
 ## Images!
 ![A highly detailed PCB](images/pcb.png)
-wait, This is 
+### Wait, its V1
 ![What a good case!](images/keyboard.png)
+### From here V2 Development begins
+![No Violations!](images/0error.png)
+![a render](images/Case-nopcb-top.png)
+![another render](images/case-top.png)
+![i dont know](images/modelmaking.png)
+![pcb!](images/pcbFront.png)
 
 
