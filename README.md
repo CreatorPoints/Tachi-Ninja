@@ -50,7 +50,8 @@ Total - $310.80
 
 ---
 ## Images!
-![A highly detailed PCB](pictures/pcb.png)
-![What a good case!](pictures/keyboard.png)
+![A highly detailed PCB](images/pcb.png)
+wait, This is 
+![What a good case!](images/keyboard.png)
 
 
