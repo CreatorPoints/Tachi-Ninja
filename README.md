@@ -28,7 +28,7 @@ So, you need this same keyboard? NO PROBLEM! Its open-source!
 3) Gather the rest of the parts. Check [BOM](./BOM.md) 
 4) Case files are in /CAD. Its upto you how to print [#Printing-Legion on slack].
 5) Once your assembled PCB arrives, hand-solder the hot-swap sockets and OLED into the board (these are excluded from PCBA since they're through-hole/socketed). Press-fit switches into the hot-swap sockets and mount the PCB into the case and snap on keycaps.
-6) Flash the firmware, hold both the BOOT and NSRT button when trning on, it turns the stm32 to bootloader mode, drop the .h and json files and you are good to go!
+6) Flash the firmware, hold both the BOOT and NRST button when turning on, it turns the stm32 to bootloader mode, drop the .h and json files on a STM32CubeProgrammer and Follow the steps there and then you are good to go!
 7) Plug in via USB-C, confirm all 61 keys register, RGB lights up per-key, and the OLED display turns on! Yippe!
 
 ---
