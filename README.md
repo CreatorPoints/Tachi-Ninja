@@ -21,6 +21,18 @@ So, when this project was submitted for forge, the reviewer returned the project
 |Very crampy keycaps|Follows universal 19.05mm rule for keyboards|
 |More compact, less polished|Kinda less compact, more polished|
 
+## Need this? Here!
+So, you need this same keyboard? NO PROBLEM! Its open-source!
+1) Download this repo [assuming you know how to... just run git clone in your terminal]
+2) Order the PCB - Preferebly from [JLCPCB](jlcpcb.com)
+3) Gather the rest of the parts. Check [BOM](./BOM.md) 
+4) Case files are in /CAD. Its upto you how to print [#Printing-Legion on slack].
+5) Once your assembled PCB arrives, hand-solder the hot-swap sockets and OLED into the board (these are excluded from PCBA since they're through-hole/socketed). Press-fit switches into the hot-swap sockets and mount the PCB into the case and snap on keycaps.
+6) Flash the firmware, hold both the BOOT and NSRT button when trning on, it turns the stm32 to bootloader mode, drop the .h and json files and you are good to go!
+7) Plug in via USB-C, confirm all 61 keys register, RGB lights up per-key, and the OLED display turns on! Yippe!
+
+---
+
 ## Components used:
 The following stuffs were used... Very hacky :)
 - STM32F072C8Tx
